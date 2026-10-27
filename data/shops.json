@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "generated": "2026-10-21",
+    "currency": "INR",
+    "note": "Demo catalogue for Local Sole. Prices are in Indian Rupees."
+  },
+  "shops": [
+    {
+      "id": "sole-theory",
+      "name": "Sole Theory",
+      "shortName": "Sole Theory",
+      "tagline": "Sneakers with a point of view",
+      "area": "Indiranagar",
+      "city": "Bengaluru",
+      "address": "12, 100 Feet Road, Indiranagar",
+      "pincode": "560038",
+      "phone": "+91 80 4123 8890",
+      "email": "hello@soletehory.in",
+      "rating": 4.8,
+      "reviewCount": 412,
+      "since": 2014,
+      "lat": 12.9719,
+      "lng": 77.6412,
+      "logo": "assets/images/icons/logo-sole-theory.svg",
+      "accent": "#E8452C",
+      "banner": "assets/images/shops/store-3.jpg",
+      "gallery": [
+        "assets/images/shops/store-3.jpg",
+        "assets/images/shoes/wall-of-soles.jpg",
+        "assets/images/shops/store-1.jpg"
+      ],
+      "description": "A neighbourhood sneaker room on 100 Feet Road. We keep a tight edit of independent labels, archive-inspired silhouettes and everyday runners — plus a repair desk for the pairs you already love.",
+      "specialties": [
+        "Sneakers",
+        "Everyday runners",
+        "Sneaker care"
+      ],
+      "hours": {
+        "mon": [
+          "10:30",
+          "21:00"
+        ],
+        "tue": [
+          "10:30",
+          "21:00"
+        ],
+        "wed": [
+          "10:30",
+          "21:00"
+        ],
+        "thu": [
+          "10:30",
+          "21:00"
+        ],
+        "fri": [
+          "10:30",
+          "21:00"
+        ],
+        "sat": [
+          "10:30",
+          "21:00"
+        ],
+        "sun": [
+          "11:00",
+          "20:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "Same day",
+        "fee": 79,
+        "freeOver": 2499
+      },
+      "pickup": {
+        "available": true,
+        "discount": 5,
+        "readyIn": 45
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card",
+        "Cash"
+      ],
+      "parking": "Street parking on 12th Main",
+      "accessibility": true
+    },
+    {
+      "id": "sneaker-house",
+      "name": "The Sneaker House",
+      "shortName": "Sneaker House",
+      "tagline": "Limited drops, local hands",
+      "area": "Koramangala",
+      "city": "Bengaluru",
+      "address": "80 Feet Road, 5th Block, Koramangala",
+      "pincode": "560095",
+      "phone": "+91 80 4110 2245",
+      "email": "drops@sneakerhouse.in",
+      "rating": 4.7,
+      "reviewCount": 328,
+      "since": 2016,
+      "lat": 12.9345,
+      "lng": 77.6266,
+      "logo": "assets/images/icons/logo-sneaker-house.svg",
+      "accent": "#141414",
+      "banner": "assets/images/shops/store-1.jpg",
+      "gallery": [
+        "assets/images/shops/store-1.jpg",
+        "assets/images/shoes/suspended-trio.jpg",
+        "assets/images/shops/store-6.jpg"
+      ],
+      "description": "Half sneaker store, half community clubhouse. Drop days happen every second Saturday, and our staff will happily talk lacing, insoles and whether that pair really runs true to size.",
+      "specialties": [
+        "Limited drops",
+        "Streetwear",
+        "Trade-ins"
+      ],
+      "hours": {
+        "mon": [
+          "11:00",
+          "22:00"
+        ],
+        "tue": [
+          "11:00",
+          "22:00"
+        ],
+        "wed": [
+          "11:00",
+          "22:00"
+        ],
+        "thu": [
+          "11:00",
+          "22:00"
+        ],
+        "fri": [
+          "11:00",
+          "22:00"
+        ],
+        "sat": [
+          "11:00",
+          "22:00"
+        ],
+        "sun": [
+          "11:00",
+          "22:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "1–2 days",
+        "fee": 79,
+        "freeOver": 2499
+      },
+      "pickup": {
+        "available": true,
+        "discount": 0,
+        "readyIn": 30
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card"
+      ],
+      "parking": "Basement parking, 5th Block",
+      "accessibility": false
+    },
+    {
+      "id": "leather-and-lace",
+      "name": "Leather & Lace",
+      "shortName": "Leather & Lace",
+      "tagline": "Occasion shoes, quietly made",
+      "area": "Jayanagar",
+      "city": "Bengaluru",
+      "address": "4th Block, 11th Main, Jayanagar",
+      "pincode": "560011",
+      "phone": "+91 80 2663 1180",
+      "email": "care@leatherandlace.in",
+      "rating": 4.6,
+      "reviewCount": 189,
+      "since": 2011,
+      "lat": 12.925,
+      "lng": 77.5838,
+      "logo": "assets/images/icons/logo-leather-and-lace.svg",
+      "accent": "#7A4B3A",
+      "banner": "assets/images/shops/store-4.jpg",
+      "gallery": [
+        "assets/images/shops/store-4.jpg",
+        "assets/images/shoes/cerulean-heel.jpg",
+        "assets/images/shops/store-2.jpg"
+      ],
+      "description": "Three generations of sizing experience in one calm Jayanagar shop. We specialise in wedding parties, boardrooms and heels you can actually stand in — with free first fitting and adjustments.",
+      "specialties": [
+        "Formal",
+        "Women's occasion",
+        "Free fitting"
+      ],
+      "hours": {
+        "mon": [
+          "10:00",
+          "20:30"
+        ],
+        "tue": [
+          "10:00",
+          "20:30"
+        ],
+        "wed": [
+          "10:00",
+          "20:30"
+        ],
+        "thu": [
+          "10:00",
+          "20:30"
+        ],
+        "fri": [
+          "10:00",
+          "20:30"
+        ],
+        "sat": [
+          "10:00",
+          "20:30"
+        ],
+        "sun": null
+      },
+      "delivery": {
+        "available": true,
+        "eta": "2–3 days",
+        "fee": 99,
+        "freeOver": 3499
+      },
+      "pickup": {
+        "available": true,
+        "discount": 8,
+        "readyIn": 60
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card",
+        "Cash"
+      ],
+      "parking": "Dedicated two-wheeler parking",
+      "accessibility": true
+    },
+    {
+      "id": "stride",
+      "name": "stride.",
+      "shortName": "stride.",
+      "tagline": "Run your first kilometre",
+      "area": "HSR Layout",
+      "city": "Bengaluru",
+      "address": "27th Main, Sector 1, HSR Layout",
+      "pincode": "560102",
+      "phone": "+91 80 4155 7712",
+      "email": "run@stride.in",
+      "rating": 4.9,
+      "reviewCount": 256,
+      "since": 2018,
+      "lat": 12.9121,
+      "lng": 77.6471,
+      "logo": "assets/images/icons/logo-stride.svg",
+      "accent": "#0E7C66",
+      "banner": "assets/images/shops/store-2.jpg",
+      "gallery": [
+        "assets/images/shops/store-2.jpg",
+        "assets/images/shoes/red-racer.jpg",
+        "assets/images/shops/store-4.jpg"
+      ],
+      "description": "A run-first store with a gait-analysis treadmill, weekly 5K meet-ups and staff who log real miles. Free gait analysis with every running shoe purchase — appointment recommended.",
+      "specialties": [
+        "Running",
+        "Gait analysis",
+        "Run club"
+      ],
+      "hours": {
+        "mon": [
+          "06:00",
+          "21:00"
+        ],
+        "tue": [
+          "06:00",
+          "21:00"
+        ],
+        "wed": [
+          "06:00",
+          "21:00"
+        ],
+        "thu": [
+          "06:00",
+          "21:00"
+        ],
+        "fri": [
+          "06:00",
+          "21:00"
+        ],
+        "sat": [
+          "06:00",
+          "21:00"
+        ],
+        "sun": [
+          "07:00",
+          "13:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "Same day",
+        "fee": 49,
+        "freeOver": 1999
+      },
+      "pickup": {
+        "available": true,
+        "discount": 0,
+        "readyIn": 20
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card"
+      ],
+      "parking": "Free parking for 30 mins",
+      "accessibility": true
+    },
+    {
+      "id": "footwork-collective",
+      "name": "Footwork Collective",
+      "shortName": "Footwork",
+      "tagline": "Eight labels, one room",
+      "area": "MG Road",
+      "city": "Bengaluru",
+      "address": "17 Church Street, Ashok Nagar",
+      "pincode": "560001",
+      "phone": "+91 80 4093 6621",
+      "email": "studio@footwork.in",
+      "rating": 4.5,
+      "reviewCount": 301,
+      "since": 2019,
+      "lat": 12.9753,
+      "lng": 77.6045,
+      "logo": "assets/images/icons/logo-footwork.svg",
+      "accent": "#3355D8",
+      "banner": "assets/images/shops/store-6.jpg",
+      "gallery": [
+        "assets/images/shops/store-6.jpg",
+        "assets/images/shoes/wall-of-soles.jpg",
+        "assets/images/shops/store-5.jpg"
+      ],
+      "description": "A collective of eight small Indian labels sharing a Church Street townhouse. Expect experimental materials, comfortable everyday pairs and a rotating gallery wall from local artists.",
+      "specialties": [
+        "Independent labels",
+        "Everyday",
+        "Art wall"
+      ],
+      "hours": {
+        "mon": [
+          "11:00",
+          "21:30"
+        ],
+        "tue": [
+          "11:00",
+          "21:30"
+        ],
+        "wed": [
+          "11:00",
+          "21:30"
+        ],
+        "thu": [
+          "11:00",
+          "21:30"
+        ],
+        "fri": [
+          "11:00",
+          "21:30"
+        ],
+        "sat": [
+          "11:00",
+          "21:30"
+        ],
+        "sun": [
+          "12:00",
+          "19:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "1–2 days",
+        "fee": 99,
+        "freeOver": 2999
+      },
+      "pickup": {
+        "available": true,
+        "discount": 5,
+        "readyIn": 40
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card",
+        "Cash"
+      ],
+      "parking": "Paid parking at Church Street",
+      "accessibility": false
+    },
+    {
+      "id": "little-feet",
+      "name": "Little Feet Co.",
+      "shortName": "Little Feet",
+      "tagline": "Grow-room built in",
+      "area": "Whitefield",
+      "city": "Bengaluru",
+      "address": "5th Cross, Palm Meadows, Whitefield",
+      "pincode": "560066",
+      "phone": "+91 80 2845 0901",
+      "email": "hello@littlefeet.in",
+      "rating": 4.8,
+      "reviewCount": 167,
+      "since": 2017,
+      "lat": 12.9698,
+      "lng": 77.7499,
+      "logo": "assets/images/icons/logo-little-feet.svg",
+      "accent": "#E0A21A",
+      "banner": "assets/images/shops/store-5.jpg",
+      "gallery": [
+        "assets/images/shops/store-5.jpg",
+        "assets/images/shoes/ivory-still-life.jpg",
+        "assets/images/shops/store-1.jpg"
+      ],
+      "description": "Kids' shoes without the guesswork. Every pair has a removable grow-room insole, free width fitting and a 30-day 'they grew' exchange. There is a small play corner, too.",
+      "specialties": [
+        "Kids",
+        "Free fitting",
+        "Grow-room"
+      ],
+      "hours": {
+        "mon": [
+          "10:00",
+          "19:30"
+        ],
+        "tue": [
+          "10:00",
+          "19:30"
+        ],
+        "wed": [
+          "10:00",
+          "19:30"
+        ],
+        "thu": [
+          "10:00",
+          "19:30"
+        ],
+        "fri": [
+          "10:00",
+          "19:30"
+        ],
+        "sat": [
+          "10:00",
+          "19:30"
+        ],
+        "sun": [
+          "11:00",
+          "18:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "2–3 days",
+        "fee": 69,
+        "freeOver": 1999
+      },
+      "pickup": {
+        "available": true,
+        "discount": 10,
+        "readyIn": 60
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card",
+        "Cash"
+      ],
+      "parking": "Free family parking",
+      "accessibility": true
+    },
+    {
+      "id": "urban-trekker",
+      "name": "Urban Trekker",
+      "shortName": "Urban Trekker",
+      "tagline": "Tested on the trail",
+      "area": "Malleshwaram",
+      "city": "Bengaluru",
+      "address": "8th Cross, Sampige Road, Malleshwaram",
+      "pincode": "560003",
+      "phone": "+91 80 2346 7788",
+      "email": "trail@urbantrekker.in",
+      "rating": 4.4,
+      "reviewCount": 144,
+      "since": 2012,
+      "lat": 13.0031,
+      "lng": 77.5709,
+      "logo": "assets/images/icons/logo-urban-trekker.svg",
+      "accent": "#56633B",
+      "banner": "assets/images/shoes/wall-of-soles.jpg",
+      "gallery": [
+        "assets/images/shoes/wall-of-soles.jpg",
+        "assets/images/shoes/tan-desert-boot.jpg",
+        "assets/images/shops/store-2.jpg"
+      ],
+      "description": "Boots, trail runners and rain-ready gear from a shop full of maps and well-worn samples. Our staff lead monthly hikes around Nandi Hills — buy a pair, join the walk.",
+      "specialties": [
+        "Outdoor",
+        "Boots",
+        "Repairs"
+      ],
+      "hours": {
+        "mon": null,
+        "tue": [
+          "10:30",
+          "20:00"
+        ],
+        "wed": [
+          "10:30",
+          "20:00"
+        ],
+        "thu": [
+          "10:30",
+          "20:00"
+        ],
+        "fri": [
+          "10:30",
+          "20:00"
+        ],
+        "sat": [
+          "10:30",
+          "20:00"
+        ],
+        "sun": [
+          "10:30",
+          "20:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "2–4 days",
+        "fee": 99,
+        "freeOver": 3499
+      },
+      "pickup": {
+        "available": true,
+        "discount": 0,
+        "readyIn": 45
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card"
+      ],
+      "parking": "Street parking, Sampige Road",
+      "accessibility": true
+    },
+    {
+      "id": "miller-and-sons",
+      "name": "Miller & Sons",
+      "shortName": "Miller & Sons",
+      "tagline": "Since 1962, still hand-stitched",
+      "area": "Commercial Street",
+      "city": "Bengaluru",
+      "address": "92 Commercial Street, Tasker Town",
+      "pincode": "560001",
+      "phone": "+91 80 2558 4410",
+      "email": "shop@millerandsons.in",
+      "rating": 4.7,
+      "reviewCount": 520,
+      "since": 1962,
+      "lat": 12.9822,
+      "lng": 77.6089,
+      "logo": "assets/images/icons/logo-miller-and-sons.svg",
+      "accent": "#1D3B33",
+      "banner": "assets/images/shops/store-3.jpg",
+      "gallery": [
+        "assets/images/shops/store-3.jpg",
+        "assets/images/shoes/espresso-derby.jpg",
+        "assets/images/shoes/wall-of-soles.jpg"
+      ],
+      "description": "A Commercial Street institution since 1962. Four generations of hand-stitched leather, a proper repair workshop at the back and a kettle that is always on. Bring your grandfather's brogues — we'll bring them back.",
+      "specialties": [
+        "Heritage leather",
+        "Repairs",
+        "Made to order"
+      ],
+      "hours": {
+        "mon": [
+          "09:30",
+          "20:30"
+        ],
+        "tue": [
+          "09:30",
+          "20:30"
+        ],
+        "wed": [
+          "09:30",
+          "20:30"
+        ],
+        "thu": [
+          "09:30",
+          "20:30"
+        ],
+        "fri": [
+          "09:30",
+          "20:30"
+        ],
+        "sat": [
+          "09:30",
+          "20:30"
+        ],
+        "sun": [
+          "10:30",
+          "18:00"
+        ]
+      },
+      "delivery": {
+        "available": true,
+        "eta": "2–3 days",
+        "fee": 0,
+        "freeOver": 0
+      },
+      "pickup": {
+        "available": true,
+        "discount": 5,
+        "readyIn": 30
+      },
+      "paymentMethods": [
+        "UPI",
+        "Card",
+        "Cash"
+      ],
+      "parking": "Commercial Street public parking",
+      "accessibility": false
+    }
+  ]
+}

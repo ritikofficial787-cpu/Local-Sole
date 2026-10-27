@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product — Local Sole</title>
+  <meta name="description" content="Shop local. Every pair at Local Sole comes from an independent Bengaluru shoe shop, with real stock counts and same-day pickup.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://localsole.in/product.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Product — Local Sole">
+  <meta property="og:description" content="Genuine stock from an independent Bengaluru shoe shop.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/product.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Product — Local Sole">
+  <meta name="twitter:description" content="Genuine stock from an independent Bengaluru shoe shop.">
+  <meta name="twitter:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="product">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" id="pdpBreadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+        <a href="products.html">All shoes</a>
+        <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+        <span aria-current="page">Product</span>
+      </nav>
+    </div>
+
+    <section class="pdp">
+      <div class="container">
+        <div class="pdp-grid">
+          <div class="gallery" id="productGallery" aria-label="Product images"></div>
+          <div class="product-info" id="productInfo"></div>
+        </div>
+        <div class="pdp-sections" id="pdpSections"></div>
+        <section class="reviews" id="productReviews" aria-labelledby="reviewsTitle"></section>
+        <section class="section" id="productRecommendations" aria-labelledby="recommendTitle" hidden>
+          <div class="section-head">
+            <div class="section-head-text">
+              <span class="eyebrow">Keep looking</span>
+              <h2 id="recommendTitle">Pairs that share a shelf<span class="text-accent">.</span></h2>
+            </div>
+            <a class="link-underline" href="products.html">Browse all styles <span data-icon="arrowRight" data-size="15"></span></a>
+          </div>
+          <div class="product-grid" id="recommendGrid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <div class="sticky-buy" id="stickyBuy" aria-label="Quick add to bag"></div>
+  <script type="application/ld+json" id="pdpJsonLd"></script>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>This pair needs JavaScript</h2>
+        <p>Product galleries, sizes and stock run in your browser. Call the shop directly from <a href="shops.html">our shops page</a> if you'd rather talk to someone.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/product.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

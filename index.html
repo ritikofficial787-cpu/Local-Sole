@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Sole — Bengaluru's neighbourhood shoe marketplace</title>
+  <meta name="description" content="Shop 66 curated styles from eight independent shoe shops across Bengaluru. Sneakers, running, formal, boots and kids' shoes with same-day local pickup.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://localsole.in/">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/images/icons/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Local Sole — every step has a neighbourhood">
+  <meta property="og:description" content="Eight independent Bengaluru shoe shops, one considered marketplace. Try local, buy local, keep the high street on its feet.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Local Sole — neighbourhood shoe marketplace">
+  <meta name="twitter:description" content="66 curated styles from eight local Bengaluru shops. Same-day pickup.">
+  <meta name="twitter:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/images/banners/hero-1.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Local Sole",
+    "url": "https://localsole.in/",
+    "description": "A marketplace for independent shoe shops across Bengaluru.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://localsole.in/products.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Local Sole",
+    "url": "https://localsole.in/",
+    "logo": "https://localsole.in/assets/images/icons/favicon.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12, 100 Feet Road, Indiranagar",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560038",
+      "addressCountry": "IN"
+    },
+    "sameAs": ["https://instagram.com", "https://facebook.com"]
+  }
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="hero-kicker">
+            <span class="mini-avatars" aria-hidden="true">
+              <img src="assets/images/avatars/avatar-1.jpg" alt="" width="21" height="21">
+              <img src="assets/images/avatars/avatar-2.jpg" alt="" width="21" height="21">
+              <img src="assets/images/avatars/avatar-3.jpg" alt="" width="21" height="21">
+            </span>
+            Loved by 12,000+ Bengaluru locals
+          </div>
+          <h1 class="hero-title" id="heroTitle">Every step has a <em>neighbourhood.</em></h1>
+          <p class="hero-sub">Eight independent shoe shops, one considered marketplace. Same-day pickup, honest fitting advice, and pairs you won't see on every street corner.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="products.html">Shop the edit <span data-icon="arrowRight" data-size="17"></span></a>
+            <a class="btn btn-outline btn-lg" href="shops.html">Meet the shops</a>
+          </div>
+          <div class="hero-stats" aria-label="Marketplace at a glance">
+            <div class="hero-stat"><strong data-counter="66">66</strong><span>curated styles</span></div>
+            <div class="hero-stat"><strong data-counter="8">8</strong><span>neighbourhood shops</span></div>
+            <div class="hero-stat"><strong data-counter="4.8" data-decimals="1">4.8</strong><span>average shop rating</span></div>
+          </div>
+          <a class="hero-scroll" href="#the-edit">Scroll to explore <span data-icon="chevronDown" data-size="14"></span></a>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-media">
+            <img src="assets/images/banners/hero-1.jpg" alt="Runner wearing a white, orange and black sneaker on a city street" width="900" height="1100" fetchpriority="high" data-parallax>
+            <div class="hero-caption">
+              <a class="row" id="heroShopLink" href="shop.html?id=sole-theory">
+                <img id="heroShopLogo" src="assets/images/icons/logo-sole-theory.svg" alt="Sole Theory logo" width="38" height="38">
+                <span>
+                  <strong id="heroShopName">Sole Theory</strong>
+                  <span id="heroShopArea">Indiranagar · 4.8 ★</span>
+                </span>
+              </a>
+              <span class="badge">Pickup today</span>
+            </div>
+          </div>
+          <div class="hero-float" id="heroFloat" aria-live="polite"></div>
+          <div class="hero-badge" aria-hidden="true">
+            <svg class="ring-text" viewBox="0 0 100 100">
+              <defs><path id="heroCircle" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+              <text><textPath href="#heroCircle">TRY LOCAL · BUY LOCAL · KEEP IT ON THE STREET ·</textPath></text>
+            </svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 15c3.2-5 5.6-1.6 8.4-5.6C13.5 6.5 15.7 9 17.5 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="19" cy="17.5" r="1.8" fill="currentColor"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Indiranagar</span><span class="marquee-item">Koramangala</span><span class="marquee-item">Jayanagar</span><span class="marquee-item">HSR Layout</span><span class="marquee-item">Church Street</span><span class="marquee-item">Malleshwaram</span><span class="marquee-item"><em>Whitefield</em></span><span class="marquee-item">Commercial Street</span>
+        <span class="marquee-item">Indiranagar</span><span class="marquee-item">Koramangala</span><span class="marquee-item">Jayanagar</span><span class="marquee-item">HSR Layout</span><span class="marquee-item">Church Street</span><span class="marquee-item">Malleshwaram</span><span class="marquee-item"><em>Whitefield</em></span><span class="marquee-item">Commercial Street</span>
+      </div>
+    </div>
+
+    <div class="container section-tight">
+      <div class="trust-strip reveal">
+        <div class="trust-item">
+          <span data-icon="store" data-size="21"></span>
+          <div><strong>Reserve &amp; pick up today</strong><span>Ready in as little as 20 minutes</span></div>
+        </div>
+        <div class="trust-item">
+          <span data-icon="truck" data-size="21"></span>
+          <div><strong>Same-day local delivery</strong><span>Free over ₹1,999, straight from the shop</span></div>
+        </div>
+        <div class="trust-item">
+          <span data-icon="refresh" data-size="21"></span>
+          <div><strong>30-day fit guarantee</strong><span>Exchange in store, no awkward questions</span></div>
+        </div>
+        <div class="trust-item">
+          <span data-icon="shield" data-size="21"></span>
+          <div><strong>Genuine stock, checked twice</strong><span>Every pair inspected by the shop</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="the-edit" aria-labelledby="editTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">The edit · 2026</span>
+            <h2 id="editTitle">Start with the shape<span class="text-accent">.</span></h2>
+            <p class="lede">Sneakers for the everyday, runners for the long way home, leather that outlives the trend. Curated by eight people who actually wear the stock.</p>
+          </div>
+          <a class="link-underline" href="products.html">Browse all 66 styles <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="newTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Fresh off the rack</span>
+            <h2 id="newTitle">New in this week<span class="text-accent">.</span></h2>
+          </div>
+          <a class="link-underline" href="products.html?new=1">All new arrivals <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="product-grid" id="newGrid"></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="flash-sale" aria-labelledby="flashTitle">
+        <div class="flash-head">
+          <div>
+            <span class="eyebrow">Midnight markdown</span>
+            <h2 id="flashTitle">Last pairs,<br>lower prices.</h2>
+            <p class="small" style="color:rgba(248,244,236,.6);margin-top:10px;max-width:38ch">When a shop has one or two sizes left, we pass the saving on. When they're gone, they're gone.</p>
+          </div>
+          <div class="countdown" id="flashCountdown" aria-label="Flash sale ends at midnight">
+            <div class="countdown-box"><strong data-cd-hours>00</strong><span>hours</span></div>
+            <span class="countdown-sep" aria-hidden="true">:</span>
+            <div class="countdown-box"><strong data-cd-minutes>00</strong><span>mins</span></div>
+            <span class="countdown-sep" aria-hidden="true">:</span>
+            <div class="countdown-box"><strong data-cd-seconds>00</strong><span>secs</span></div>
+          </div>
+        </div>
+        <div class="product-grid" id="flashGrid"></div>
+        <div class="row-between mt-6" style="position:relative;z-index:1;flex-wrap:wrap;gap:12px">
+          <span class="small" style="color:rgba(248,244,236,.55)">Prices drop at 00:00 IST. No code needed.</span>
+          <a class="btn btn-light btn-sm" href="products.html?discount=1">See all markdowns <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+      </section>
+    </div>
+
+    <section class="section" aria-labelledby="bestTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">The ones walking out the door</span>
+            <h2 id="bestTitle">Best sellers<span class="text-accent">.</span></h2>
+          </div>
+          <a class="link-underline" href="products.html?sort=rating">Top rated first <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="product-grid" id="bestGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="storyTitle">
+      <div class="container editorial">
+        <div class="editorial-media reveal reveal-left">
+          <img class="tall" src="assets/images/shops/store-3.jpg" alt="The glowing blue storefront of a neighbourhood shop, with a bicycle parked outside" width="640" height="800" loading="lazy">
+          <img class="short" src="assets/images/banners/craft.jpg" alt="A blue sneaker photographed against a cobalt background" width="420" height="560" loading="lazy">
+          <span class="editorial-badge">Try local<br>first</span>
+        </div>
+        <div class="editorial-copy">
+          <span class="eyebrow">Why Local Sole</span>
+          <h2 id="storyTitle">Shoes from people who know your street.</h2>
+          <p class="lede">The big marketplaces treat every pair the same. We'd rather you meet the person who picked it. Each shop keeps its own stock, sets its own prices and gives its own fitting advice — we just bring them together.</p>
+          <div class="value-grid">
+            <div class="value-item">
+              <span data-icon="store" data-size="16"></span>
+              <div><strong>Real stock, on the shelf</strong><p>Availability comes straight from each shop, not a distant warehouse.</p></div>
+            </div>
+            <div class="value-item">
+              <span data-icon="ruler" data-size="16"></span>
+              <div><strong>Fit advice that knows your foot</strong><p>Free size consultations, width checks and a 30-day exchange.</p></div>
+            </div>
+            <div class="value-item">
+              <span data-icon="heart" data-size="16"></span>
+              <div><strong>Your money stays nearby</strong><p>Every order supports an independent business and the people behind it.</p></div>
+            </div>
+          </div>
+          <div class="row mt-6 wrap">
+            <a class="btn btn-dark" href="shops.html">Meet the eight shops</a>
+            <a class="link-underline" href="contact.html">Our story <span data-icon="arrowUpRight" data-size="14"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="shopsTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">The neighbours</span>
+            <h2 id="shopsTitle">Eight doors worth opening<span class="text-accent">.</span></h2>
+            <p class="lede">From a 1962 leather institution on Commercial Street to a run club with a treadmill in HSR — these are the shops behind the stock.</p>
+          </div>
+          <a class="link-underline" href="shops.html">All shops &amp; areas <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="neighbour-grid" id="shopGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="quotesTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Word on the street</span>
+            <h2 id="quotesTitle">Locals know<span class="text-accent">.</span></h2>
+          </div>
+          <span class="rating"><span class="rating-stars" aria-hidden="true">★★★★★</span><strong>4.7</strong><span class="small muted">from 2,017 shop reviews</span></span>
+        </div>
+        <div class="quote-grid stagger">
+          <figure class="quote-card">
+            <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Picked up a pair in Indiranagar forty minutes after ordering. The owner remembered my size from last time.”</blockquote>
+            <figcaption class="quote-author">
+              <img src="assets/images/avatars/avatar-1.jpg" alt="Ananya R." width="36" height="36" loading="lazy">
+              <div><strong>Ananya R.</strong><span>Indiranagar · verified buyer</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card">
+            <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“The gait analysis at stride. was better than any chain store. Ran my first half marathon in the pair they suggested.”</blockquote>
+            <figcaption class="quote-author">
+              <img src="assets/images/avatars/avatar-2.jpg" alt="Rahul M." width="36" height="36" loading="lazy">
+              <div><strong>Rahul M.</strong><span>HSR Layout · verified buyer</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card">
+            <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Miller &amp; Sons resoled my father's brogues for less than a new pair. They look better than they did in 1998.”</blockquote>
+            <figcaption class="quote-author">
+              <img src="assets/images/avatars/avatar-3.jpg" alt="Meera S." width="36" height="36" loading="lazy">
+              <div><strong>Meera S.</strong><span>Commercial Street · verified buyer</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="newsletter-band" aria-labelledby="newsletterTitle">
+        <div>
+          <span class="eyebrow">The inside track</span>
+          <h2 id="newsletterTitle">New pairs,<br><em class="serif-italic">first.</em></h2>
+          <p>A short letter every other Thursday: new arrivals, last-pair markdowns and the occasional neighbour worth knowing.</p>
+          <div class="newsletter-perks">
+            <span data-icon="check" data-size="12"></span><span>No spam, ever</span>
+            <span data-icon="check" data-size="12"></span><span>Subscriber-only drops</span>
+            <span data-icon="check" data-size="12"></span><span>Unsubscribe in one click</span>
+          </div>
+        </div>
+        <div>
+          <form data-newsletter novalidate>
+            <label class="sr-only" for="homeNewsletterEmail">Email address</label>
+            <input class="input" id="homeNewsletterEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <button class="btn btn-primary" type="submit">Join the list</button>
+          </form>
+          <div class="newsletter-message" role="status" aria-live="polite"></div>
+          <p class="tiny" style="color:rgba(248,244,236,.45);margin-top:10px">By subscribing you agree to our friendly, occasional emails.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="section" id="recentlyViewedSection" aria-labelledby="recentTitle" hidden>
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Just looking again</span>
+            <h2 id="recentTitle">Recently viewed<span class="text-accent">.</span></h2>
+          </div>
+          <a class="link-underline" href="products.html">Keep browsing <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="scroll-row" id="recentGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state"><h2>JavaScript, please</h2><p>Local Sole uses JavaScript for the bag, filters and product grids. Turn it on for the full experience.</p></div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

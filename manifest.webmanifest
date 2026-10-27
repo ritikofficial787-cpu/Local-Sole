@@ -1,0 +1,64 @@
+{
+  "name": "Local Sole — neighbourhood shoe marketplace",
+  "short_name": "Local Sole",
+  "description": "Sixty-six curated pairs from eight independent shoe shops across Bengaluru. Reserve online, collect the same day.",
+  "id": "/",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f3ec",
+  "theme_color": "#f6f3ec",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "assets/images/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/images/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Shop all shoes",
+      "short_name": "Shoes",
+      "description": "Browse the full Local Sole edit",
+      "url": "./products.html",
+      "icons": [{ "src": "assets/images/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Find a shop",
+      "short_name": "Shops",
+      "description": "Eight neighbourhood shoe shops",
+      "url": "./shops.html",
+      "icons": [{ "src": "assets/images/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Your bag",
+      "short_name": "Bag",
+      "description": "Review your saved pairs",
+      "url": "./cart.html",
+      "icons": [{ "src": "assets/images/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+﻿const fs=require('fs');
+let s=fs.readFileSync('scripts/generate_data.js','utf8');
+s=s.replace('["aeris-ventus-3", "Aeris Ventus 3", "Aeris", "unisex", "running", 8999, 11999, 4.8, 214, "stride", "coral-runner", true, true, "Engineered mesh"]','["nike-pegasus-41", "Air Zoom Pegasus 41", "Nike", "unisex", "running", 8999, 11999, 4.8, 214, "stride", "coral-runner", true, true, "Engineered mesh"]');
+s=s.replace('["pace-velocity-pro", "Pace Velocity Pro", "Pace", "men", "running", 11499, 13999,','["nike-vaporfly-3", "Vaporfly 3", "Nike", "men", "running", 16999, 19999,');
+s=s.replace('["norr-court-77", "Norr Court 77", "Norr", "unisex", "sneakers", 7499, null, 4.8, 342, "sole-theory", "cream-heritage", false, true, "Full-grain leather"]','["nike-court-vision-low", "Court Vision Low", "Nike", "unisex", "sneakers", 7499, null, 4.8, 342, "sole-theory", "cream-heritage", false, true, "Full-grain leather"]');
+s=s.replace('["velo-dash-trainer", "Velo Dash Trainer", "Velo", "men", "running", 5499, 6999,','["adidas-ultraboost-5", "Ultraboost 5", "Adidas", "men", "running", 8999, 11999,');
+s=s.replace('["norr-drift-racer", "Norr Drift Racer", "Norr", "unisex", "running", 7999, null,','["new-balance-530", "530", "New Balance", "unisex", "running", 7999, null,');
+s=s.replace('"norr-court-77": [["sneaker-house", 7299], ["footwork-collective", 7699]],','"nike-court-vision-low": [["sneaker-house", 7299], ["footwork-collective", 7699]],');
+s=s.replace('"aeris-ventus-3": [["sole-theory", 9299], ["sneaker-house", 8799]],','"nike-pegasus-41": [["sole-theory", 9299], ["sneaker-house", 8799]],');
+s=s.replace('"pace-velocity-pro": [["sneaker-house", 11899], ["footwork-collective", 10999]],','"nike-vaporfly-3": [["sneaker-house", 17499], ["footwork-collective", 16299]],');
+fs.writeFileSync('scripts/generate_data.js',s);

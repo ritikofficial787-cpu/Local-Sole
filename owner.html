@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopkeeper's desk — Local Sole</title>
+  <meta name="description" content="Manage a Local Sole shop: stock, prices, product listings and orders from one quiet dashboard.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://localsole.in/owner.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Shopkeeper's desk — Local Sole">
+  <meta property="og:description" content="Stock, prices and orders for one Local Sole shop.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/owner.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="owner">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container owner-hero">
+      <div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb" style="padding-bottom:14px">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+          <span aria-current="page">Shopkeeper's desk</span>
+        </nav>
+        <span class="eyebrow">Owner demo</span>
+        <h1 class="display">Run your shop<span class="text-accent">.</span></h1>
+        <p>Stock, prices and orders for one neighbourhood shop. Changes save to this browser instantly.</p>
+      </div>
+      <div class="field" style="min-width:250px">
+        <label for="ownerShopSelect">Viewing shop</label>
+        <select class="select" id="ownerShopSelect"></select>
+      </div>
+    </div>
+
+    <div class="container owner-layout">
+      <aside class="owner-sidebar" aria-label="Dashboard navigation">
+        <div class="owner-shop" id="ownerShopCard"></div>
+        <nav class="account-nav" id="ownerNav"></nav>
+      </aside>
+      <div class="account-main" id="ownerMain" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>The dashboard needs JavaScript</h2>
+        <p>Stock edits are kept in your browser. Turn JavaScript on to manage products, or <a href="shops.html">browse the shops</a>.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/owner.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your bag — Local Sole</title>
+  <meta name="description" content="Review the pairs in your Local Sole bag, apply a coupon, estimate delivery and reserve from a neighbourhood shop.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://localsole.in/cart.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Your bag — Local Sole">
+  <meta property="og:description" content="Review your pairs, apply a coupon and check local delivery.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/cart.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="cart">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb" style="padding-top:22px">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+        <span aria-current="page">Your bag</span>
+      </nav>
+      <div class="cart-layout">
+        <div id="cartPage" aria-live="polite"></div>
+        <aside class="cart-summary" id="cartSummary" aria-label="Order summary"></aside>
+      </div>
+      <div id="savedLater"></div>
+    </div>
+
+    <section class="section section-alt" aria-labelledby="cartHelpTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Before you go</span>
+            <h2 id="cartHelpTitle">A few things worth knowing<span class="text-accent">.</span></h2>
+          </div>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-item">
+            <span class="trust-icon" data-icon="store" data-size="20"></span>
+            <div><strong>Reserve &amp; collect</strong><p>Pick up from the shop floor, often within 30 minutes — and save up to 10%.</p></div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" data-icon="refresh" data-size="20"></span>
+            <div><strong>30-day exchanges</strong><p>Wrong size? Walk into the shop and swap it. No courier ping-pong.</p></div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" data-icon="shield" data-size="20"></span>
+            <div><strong>Fit guarantee</strong><p>Every shop stands behind its sizing advice. Ask before you buy.</p></div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon" data-icon="phone" data-size="20"></span>
+            <div><strong>Talk to a human</strong><p>Every order is fulfilled by a named neighbourhood shop, not a warehouse.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>Your bag needs JavaScript</h2>
+        <p>Bags and stock counts are kept in your browser. Turn JavaScript on, or visit a shop directly from <a href="shops.html">the shops page</a>.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

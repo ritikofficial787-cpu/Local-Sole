@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Local Sole</title>
+  <meta name="description" content="That page isn't on the shelf. Browse the shoe edit, find a neighbourhood shop or head back to Local Sole.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Page not found — Local Sole">
+  <meta property="og:description" content="This shelf is empty. Let's find you a pair.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="notfound">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="notfound" aria-labelledby="notFoundTitle">
+      <div class="container">
+        <div class="notfound-code" aria-hidden="true">404
+          <span><img src="assets/images/shoes/triple-white.jpg" alt="" width="150" height="150"></span>
+        </div>
+        <h1 id="notFoundTitle">This shelf is empty<span class="text-accent">.</span></h1>
+        <p>The page you're after has been moved, sold, or never existed. The good news: there are 66 pairs and eight shop doors right around the corner.</p>
+        <div class="row">
+          <a class="btn btn-primary" href="index.html">Back to the shop</a>
+          <a class="btn btn-outline" href="products.html">Browse all shoes</a>
+          <a class="btn btn-ghost" href="shops.html">Find a neighbourhood shop</a>
+        </div>
+        <div class="chip-row" style="justify-content:center;margin-top:26px">
+          <a class="chip" href="products.html?type=running">Running</a>
+          <a class="chip" href="products.html?category=women">Women's edit</a>
+          <a class="chip" href="products.html?sort=discount">On sale</a>
+          <a class="chip" href="wishlist.html">Your wishlist</a>
+          <a class="chip" href="contact.html">Ask for help</a>
+        </div>
+        <p class="tiny muted mt-4">Looking for an order? <a class="link-underline" href="account.html#orders">Track it in your account</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

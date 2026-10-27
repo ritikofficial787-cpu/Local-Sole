@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Local Sole</title>
+  <meta name="description" content="Choose delivery or same-day pickup, add your details and pay securely. Every order is fulfilled by a neighbourhood Bengaluru shoe shop.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://localsole.in/checkout.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Checkout — Local Sole">
+  <meta property="og:description" content="Delivery or same-day pickup from a neighbourhood shop.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/checkout.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="checkout">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container">
+      <div class="checkout-shell">
+        <div id="checkoutApp" aria-live="polite"></div>
+        <aside class="checkout-summary" id="checkoutSummary" aria-label="Order summary"></aside>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>Checkout needs JavaScript</h2>
+        <p>Payment, pickup slots and order history run in your browser. Turn JavaScript on, or call a shop directly from <a href="shops.html">the shops page</a>.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

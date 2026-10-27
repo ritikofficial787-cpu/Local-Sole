@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare shoes — Local Sole</title>
+  <meta name="description" content="Compare up to three pairs side by side: price at each shop, sizes in stock, ratings, materials and pickup options.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://localsole.in/compare.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Compare shoes — Local Sole">
+  <meta property="og:description" content="Compare price, fit and pickup across local shops.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/compare.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="compare">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="account-header" aria-labelledby="compareTitle">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb" style="padding-bottom:16px">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+          <span aria-current="page">Compare</span>
+        </nav>
+        <span class="eyebrow">Side by side</span>
+        <h1 class="display" id="compareTitle">Three pairs, one decision<span class="text-accent">.</span></h1>
+        <p class="lede" style="max-width:60ch">Price, fit, stock and pickup — pulled live from each shop. Add up to three pairs from the catalogue and we'll line them up.</p>
+      </div>
+    </section>
+
+    <div class="container compare-page">
+      <div class="wishlist-toolbar">
+        <span class="small muted" id="compareCount" role="status" aria-live="polite">Loading comparison…</span>
+        <div class="row wrap">
+          <a class="btn btn-outline btn-sm" href="products.html">Add pairs</a>
+          <button class="btn btn-ghost btn-sm" type="button" id="clearCompare" hidden>Clear all</button>
+        </div>
+      </div>
+      <div id="compareMount" aria-live="polite"></div>
+
+      <section class="section" aria-labelledby="compareSuggestTitle">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Add another</span>
+            <h2 id="compareSuggestTitle">Popular right now<span class="text-accent">.</span></h2>
+          </div>
+          <a class="link-underline" href="products.html">Browse all <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="product-grid" id="compareSuggestions"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>Compare needs JavaScript</h2>
+        <p>Prices and stock are compared in your browser. Turn JavaScript on, or browse <a href="products.html">the full catalogue</a>.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/compare.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

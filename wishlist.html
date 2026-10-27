@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your wishlist — Local Sole</title>
+  <meta name="description" content="The pairs you've saved from Bengaluru's independent shoe shops. Keep looking, compare, or add them to your bag.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://localsole.in/wishlist.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Your wishlist — Local Sole">
+  <meta property="og:description" content="The pairs you've saved from local shops.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/wishlist.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="wishlist">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb" style="padding-top:22px">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+        <span aria-current="page">Wishlist</span>
+      </nav>
+    </div>
+
+    <section class="account-header" aria-labelledby="wishlistTitle">
+      <div class="container">
+        <span class="eyebrow">Keep looking</span>
+        <h1 class="display" id="wishlistTitle">Saved for later<span class="text-accent">.</span></h1>
+        <p class="lede" style="max-width:58ch">A quiet corner for the pairs you can't decide on. We'll hold the thought — stock and prices update from each shop.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="wishlist-toolbar" id="wishlistToolbar">
+        <span class="small muted" id="wishlistCount" role="status" aria-live="polite">Loading your saves…</span>
+        <div class="row wrap">
+          <label class="sr-only" for="wishlistSort">Sort wishlist</label>
+          <select class="select" id="wishlistSort" style="min-height:40px;font-size:.8rem;width:auto">
+            <option value="recent">Recently saved</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="rating">Top rated</option>
+          </select>
+          <button class="btn btn-outline btn-sm" type="button" id="clearWishlist">Clear all</button>
+        </div>
+      </div>
+      <div class="wishlist-grid" id="wishlistGrid" aria-live="polite"></div>
+      <div id="wishlistEmpty"></div>
+
+      <section class="section" aria-labelledby="wishlistSuggestTitle">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">While you decide</span>
+            <h2 id="wishlistSuggestTitle">Recently viewed<span class="text-accent">.</span></h2>
+          </div>
+          <a class="link-underline" href="products.html">Browse all <span data-icon="arrowRight" data-size="15"></span></a>
+        </div>
+        <div class="product-grid" id="wishlistRecent"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>Your wishlist needs JavaScript</h2>
+        <p>Saved pairs live in your browser. Turn JavaScript on, or browse <a href="products.html">the full catalogue</a>.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

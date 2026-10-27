@@ -1,0 +1,5 @@
+# Local Sole - localsole.in
+User-agent: *
+Allow: /
+
+Sitemap: https://localsole.in/sitemap.xml

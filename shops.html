@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local shops — eight doors worth opening | Local Sole</title>
+  <meta name="description" content="Meet eight independent shoe shops across Bengaluru — Indiranagar, Koramangala, HSR Layout, Jayanagar, Whitefield, Commercial Street and more. Open now, pickup available, real people.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://localsole.in/shops.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Local shops — eight doors worth opening | Local Sole">
+  <meta property="og:description" content="Eight independent shoe shops across Bengaluru. Find one open near you, or browse them all.">
+  <meta property="og:image" content="https://localsole.in/assets/images/shops/store-1.jpg">
+  <meta property="og:url" content="https://localsole.in/shops.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Local shops — Local Sole">
+  <meta name="twitter:description" content="Eight independent shoe shops across Bengaluru.">
+  <meta name="twitter:image" content="https://localsole.in/assets/images/shops/store-1.jpg">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+</head>
+<body data-page="shops">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section aria-labelledby="shopsTitle">
+      <div class="container">
+        <div class="shops-hero">
+        <div>
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+            <span aria-current="page">Local shops</span>
+          </nav>
+          <span class="eyebrow">The neighbours</span>
+          <h1 class="display" id="shopsTitle">Eight doors,<br><em class="serif-italic">eight opinions.</em></h1>
+          <p class="lede">A cobbler's institution from 1962, a run club with a treadmill, a kids' shop that measures twice. These are the people who actually know the stock — go see them.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-locate>
+              <span data-icon="pin" data-size="16"></span> Find shops near me
+            </button>
+            <a class="btn btn-outline" href="products.html">Shop online instead</a>
+          </div>
+          <div class="hero-stats" aria-label="Shop network at a glance">
+            <div class="hero-stat"><strong data-counter="8">8</strong><span>independent shops</span></div>
+            <div class="hero-stat"><strong data-counter="7">7</strong><span>neighbourhoods</span></div>
+            <div class="hero-stat"><strong data-counter="4.8" data-decimals="1">4.8</strong><span>average rating</span></div>
+          </div>
+        </div>
+        <div class="shops-hero-media">
+          <img src="assets/images/shops/store-1.jpg" alt="A warmly lit independent shoe shop with shelves of leather shoes and a wooden counter" width="900" height="620" fetchpriority="high">
+          <span class="badge badge-pickup"><span class="status-dot"></span> Pickup from every shop</span>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="nearby-banner" id="nearbyBanner">
+        <div class="row">
+          <span data-icon="pin" data-size="21"></span>
+          <div>
+            <strong id="nearbyTitle">Find the closest pair</strong>
+            <p id="nearbyText">Share your location and we'll sort the shops by walking distance. Nothing is stored on a server — this stays in your browser.</p>
+            <span class="location-confirm" id="locationConfirm" hidden></span>
+          </div>
+        </div>
+        <div class="area-select-row">
+          <label class="sr-only" for="areaSelect">Choose your neighbourhood</label>
+          <select class="select" id="areaSelect">
+            <option value="">All neighbourhoods</option>
+          </select>
+          <button class="btn btn-outline btn-sm" type="button" data-locate id="locateBtn">Use my location</button>
+        </div>
+      </div>
+
+      <div class="shops-toolbar">
+        <div class="shops-filters">
+          <div class="shops-search">
+            <span data-icon="search" data-size="16"></span>
+            <label class="sr-only" for="shopSearch">Search shops</label>
+            <input class="input" id="shopSearch" type="search" placeholder="Shop, area or specialty" autocomplete="off">
+          </div>
+          <label class="chip" style="cursor:pointer">
+            <input type="checkbox" id="openNowFilter" style="accent-color:var(--accent);margin-right:6px"> Open now
+          </label>
+        </div>
+        <div class="row">
+          <label class="sr-only" for="shopSort">Sort shops</label>
+          <select class="select" id="shopSort" style="width:auto;min-height:38px;font-size:.75rem">
+            <option value="recommended">Recommended</option>
+            <option value="nearby">Nearest first</option>
+            <option value="rating">Highest rated</option>
+            <option value="since">Longest standing</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="result-count mb-4" id="shopCount" role="status" aria-live="polite">Loading the high street…</p>
+      <div class="shops-list" id="shopsList" aria-busy="true"></div>
+
+      <div class="catalog-footer-note">
+        <span>Every shop sets its own prices, stock and fitting advice.</span>
+        <span>Shop hours shown in IST · Last updated today</span>
+      </div>
+    </div>
+
+    <section class="section section-alt" aria-labelledby="whyLocalTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Why independent</span>
+            <h2 id="whyLocalTitle">The high street knows your foot<span class="text-accent">.</span></h2>
+            <p class="lede">A chain can sell you a size. A neighbour can tell you the pair runs narrow, remembers you bought the last one in 2023, and resoles them when the heel goes. That's the difference.</p>
+          </div>
+          <a class="btn btn-dark" href="owner.html">Run a shop? Join us</a>
+        </div>
+        <div class="quote-grid stagger">
+          <figure class="quote-card">
+            <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“They measured my daughter's feet twice, then told me to come back in three months rather than sell me the wrong size.”</blockquote>
+            <figcaption class="quote-author">
+              <img src="assets/images/avatars/avatar-4.jpg" alt="Priya N." width="36" height="36" loading="lazy">
+              <div><strong>Priya N.</strong><span>Jayanagar · verified buyer</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card">
+            <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“The only place in the city that had my width in stock. They called another shop and had it sent over the same afternoon.”</blockquote>
+            <figcaption class="quote-author">
+              <img src="assets/images/avatars/avatar-2.jpg" alt="Dev A." width="36" height="36" loading="lazy">
+              <div><strong>Dev A.</strong><span>Whitefield · verified buyer</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card">
+            <span class="rating-stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Walked in for laces, stayed for twenty minutes talking about running shoes. Left with both. No regrets.”</blockquote>
+            <figcaption class="quote-author">
+              <img src="assets/images/avatars/avatar-3.jpg" alt="Sana K." width="36" height="36" loading="lazy">
+              <div><strong>Sana K.</strong><span>HSR Layout · verified buyer</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>The high street needs JavaScript</h2>
+        <p>Search, opening hours and distance sorting run in your browser. Turn JavaScript on to meet the shops.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/shops.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

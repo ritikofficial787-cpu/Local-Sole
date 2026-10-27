@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-IN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop all shoes — 66 local styles | Local Sole</title>
+  <meta name="description" content="Browse every pair from eight independent Bengaluru shoe shops. Filter sneakers, running, formal, boots, sandals and kids' styles by size, colour, brand, price and neighbourhood.">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://localsole.in/products.html">
+  <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Local Sole">
+  <meta property="og:title" content="Shop all shoes — Local Sole">
+  <meta property="og:description" content="66 curated styles from eight independent Bengaluru shoe shops. Filter by size, colour, price and neighbourhood.">
+  <meta property="og:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <meta property="og:url" content="https://localsole.in/products.html">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shop all shoes — Local Sole">
+  <meta name="twitter:description" content="66 curated styles from eight Bengaluru neighbourhood shops.">
+  <meta name="twitter:image" content="https://localsole.in/assets/images/banners/og-default.jpg">
+  <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-200800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("ls_theme_v1");
+        var prefers = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefers ? "dark" : "light");
+        document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
+      } catch (e) { /* theme falls back to light */ }
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Shop all shoes",
+    "url": "https://localsole.in/products.html",
+    "description": "Browse 66 curated shoe styles from eight independent Bengaluru shops.",
+    "isPartOf": { "@type": "WebSite", "name": "Local Sole", "url": "https://localsole.in/" }
+  }
+  </script>
+</head>
+<body data-page="products">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="catalog-hero" aria-labelledby="catalogTitle">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true" data-icon="chevronRight" data-size="12"></span>
+          <span aria-current="page">All shoes</span>
+        </nav>
+        <div class="page-hero-row">
+          <div>
+            <span class="eyebrow">The full edit</span>
+            <h1 class="display" id="catalogTitle">Every pair, <em class="serif-italic">every shop</em><span class="text-accent">.</span></h1>
+            <p class="lede" id="catalogLede">Sneakers, runners, leather and everything in between — pulled from eight shop floors across Bengaluru. Filter by what fits, what you need, and how far you'll walk to try it on.</p>
+          </div>
+          <div class="catalog-hero-note">
+            <span class="badge badge-pickup"><span class="status-dot"></span> 8 shops open today</span>
+            <p class="small muted">Real stock counts, straight from each shop. Reserve online and pick up the same day.</p>
+            <a class="link-underline small" href="shops.html">Browse by neighbourhood <span data-icon="arrowRight" data-size="13"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container catalog-layout">
+      <aside class="catalog-sidebar" id="filterSidebar" aria-label="Filter products">
+        <div id="filterSidebarBody"></div>
+      </aside>
+
+      <div class="catalog-main">
+        <div class="catalog-toolbar">
+          <span class="result-count" id="resultCount" role="status" aria-live="polite">Loading the rack…</span>
+          <div class="toolbar-actions">
+            <button class="btn btn-outline btn-sm filter-toggle-mobile" type="button" data-open-filters aria-haspopup="dialog" aria-controls="filterDrawer">
+              <span data-icon="sliders" data-size="15"></span> Filters
+              <span class="filter-count" id="mobileFilterCount" hidden></span>
+            </button>
+            <label class="sr-only" for="sortSelect">Sort products</label>
+            <select class="select sort-select" id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest first</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="rating">Top rated</option>
+              <option value="discount">Biggest discounts</option>
+              <option value="popular">Most reviewed</option>
+            </select>
+            <div class="view-toggle" role="group" aria-label="Product layout">
+              <button type="button" data-view="grid" class="is-active" aria-label="Grid view" aria-pressed="true"><span data-icon="grid" data-size="15"></span></button>
+              <button type="button" data-view="list" aria-label="List view" aria-pressed="false"><span data-icon="list" data-size="15"></span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-filters-bar" id="activeFilters" aria-label="Active filters"></div>
+
+        <div class="catalog-status" id="catalogStatus" hidden></div>
+        <div class="product-grid" id="catalogGrid" aria-busy="true"></div>
+        <div class="load-more-wrap" id="loadMoreWrap" hidden></div>
+
+        <div class="catalog-footer-note">
+          <span>Every pair is genuine stock, inspected by the shop before dispatch.</span>
+          <span>Prices include GST · Free exchanges within 30 days</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-alt" aria-labelledby="catalogHelpTitle">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head-text">
+            <span class="eyebrow">Can't decide?</span>
+            <h2 id="catalogHelpTitle">Let a neighbour help<span class="text-accent">.</span></h2>
+            <p class="lede">Our shop teams answer fitting questions all day. Tell them what the shoe is for and they'll shortlist two or three pairs.</p>
+          </div>
+          <div class="row wrap">
+            <a class="btn btn-dark" href="contact.html">Ask a fit question</a>
+            <button class="btn btn-outline" type="button" data-open-size-guide-modal="nike-pegasus-41">Open size guide</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <aside class="drawer drawer-left filter-drawer" id="filterDrawer" role="dialog" aria-modal="true" aria-labelledby="filterDrawerTitle" aria-hidden="true">
+    <div class="filter-drawer-head">
+      <div><span class="eyebrow no-rule">Refine</span><h2 id="filterDrawerTitle">Filters</h2></div>
+      <button class="drawer-close" type="button" data-close-filters aria-label="Close filters"><span data-icon="close" data-size="18"></span></button>
+    </div>
+    <div class="filter-drawer-body" id="filterDrawerBody"></div>
+    <div class="filter-drawer-foot">
+      <button class="btn btn-outline" type="button" data-clear-all>Clear all</button>
+      <button class="btn btn-primary" type="button" data-close-filters>Show <span id="drawerResultCount">results</span></button>
+    </div>
+  </aside>
+
+  <noscript>
+    <div class="container section">
+      <div class="empty-state">
+        <h2>The catalogue needs JavaScript</h2>
+        <p>Filters, sorting and stock counts run in your browser. Turn JavaScript on, or call a shop directly from <a href="shops.html">the shops page</a>.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <script src="data/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
